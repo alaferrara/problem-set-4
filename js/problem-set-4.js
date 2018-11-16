@@ -172,7 +172,32 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  
+ let gallons = 0;
+ let quarts = 0;
+ let pints = 0;
+ let cups = 0;
+while (fluidOunces >= 128) {
+ gallons = gallons + 1
+ fluidOunces = fluidOunces - 128;
+}
+while (fluidOunces >= 32) {
+ quarts = quarts + 1
+ fluidOunces = fluidOunces - 32;
+}
+while (fluidOunces >= 16) {
+ pints = pints + 1
+ fluidOunces = fluidOunces - 16;
+}
+while (fluidOunces >= 8) {
+ cups = cups + 1
+ fluidOunces = fluidOunces - 8;
+}
+
+
+var div = document.getElementById("output7");
+div.innerHTML = 'Gallons: ' + gallons + '<br/>' + 'Quarts: ' + quarts + '<br/>' + 'Pints: ' + pints + '<br/>' + 'Cups: ' + cups + '<br/>' + 'Fluid Ounces: ' + fluidOunces;
+
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
@@ -196,7 +221,21 @@ function ounces() {
   let ounces = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 8 CODE HERE
+  
+ let tons = 0;
+ let pounds = 0;
+while (ounces >= 32000) {
+ tons = tons + 1
+ ounces = ounces - 32000;
+}
+while (ounces >= 16) {
+ pounds = pounds + 1
+ ounces = ounces - 16;
+}
+
+var div = document.getElementById("output8");
+div.innerHTML = 'Tons: ' + tons + '<br/>' + 'Pounds: ' + pounds + '<br/>' + 'Ounces: ' + ounces;
+
 
   ////////////////////////// DO NOT MODIFY
   check("ounces", input); // DO NOT MODIFY
@@ -220,7 +259,31 @@ function money() {
   let pennies = input; // DO NOT MODIFY
   /////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 9 CODE HERE
+  
+ let dollars = 0;
+ let quarters = 0;
+ let dimes = 0;
+ let nickels = 0;
+while (pennies >= 100) {
+ dollars = dollars + 1
+ pennies = pennies - 100;
+}
+while (pennies >= 25) {
+ quarters = quarters + 1
+ pennies = pennies - 25;
+}
+while (pennies >= 10) {
+ dimes = dimes + 1
+ pennies = pennies - 10;
+}
+while (pennies >= 5) {
+ nickels = nickels + 1
+ pennies = pennies - 5;
+}
+
+var div = document.getElementById("output9");
+div.innerHTML = 'Dollars: ' + dollars + '<br/>' + 'Quarters: ' + quarters + '<br/>' + 'Dimes: ' + dimes + '<br/>' + 'Nickels: ' + nickels + '<br/>' + 'Pennies: ' + pennies;
+
 
   ///////////////////////// DO NOT MODIFY
   check("money", input); // DO NOT MODIFY
@@ -244,7 +307,28 @@ function change() {
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 10 CODE HERE
+  
+ let coins = 0
+while (amount >= .25) {
+ coins = coins + 1
+ amount = amount - .25;
+}
+while (amount >= .10) {
+ coins = coins + 1
+ amount = amount - .10;
+}
+while (amount >= .05) {
+ coins = coins + 1
+ amount = amount - .05;
+}
+while (amount >= .01) {
+ coins = coins + 1
+ amount = amount - .01;
+}
+
+var div = document.getElementById("output10");
+div.innerHTML = coins + ' coins.'
+
 
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
