@@ -148,7 +148,7 @@ while (centimeters >= 100) {
 }
 
 var div = document.getElementById("output6");
-div.innerHTML = 'Kilometers: ' + kilometers + '<br/>' + 'Meters: ' + meters + '<br/>' + 'Centimetrs: ' + centimeters;
+div.innerHTML = 'Kilometers: ' + kilometers + '<br/>' + 'Meters: ' + meters + '<br/>' + 'Centimeters: ' + centimeters;
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
@@ -172,7 +172,7 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  
+
  let gallons = 0;
  let quarts = 0;
  let pints = 0;
@@ -221,7 +221,7 @@ function ounces() {
   let ounces = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  
+
  let tons = 0;
  let pounds = 0;
 while (ounces >= 32000) {
@@ -259,7 +259,7 @@ function money() {
   let pennies = input; // DO NOT MODIFY
   /////////////////////// DO NOT MODIFY
 
-  
+
  let dollars = 0;
  let quarters = 0;
  let dimes = 0;
@@ -307,7 +307,7 @@ function change() {
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  
+
  let coins = 0
 while (amount >= .25) {
  coins = coins + 1
