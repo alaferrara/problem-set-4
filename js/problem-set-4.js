@@ -324,7 +324,7 @@ while (amount >= .05) {
 while (amount >= .01) {
  coins = coins + 1
  amount = amount - .01;
-}
+} 
 
 var div = document.getElementById("output10");
 div.innerHTML = coins + ' coins.'
